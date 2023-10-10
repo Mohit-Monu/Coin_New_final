@@ -1,0 +1,106 @@
+.container {
+  position: relative;
+}
+
+.buttonStyled {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 50px;
+}
+.buttonStyled2{
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 50px;
+}
+.textStyled{
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 50px;
+}
+.textStyled2{
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
+.container2{
+  position: relative;
+
+}
+.firststep {
+  font-size: 23px;
+  font-weight: 500;
+  position: absolute;
+  top: 32%;
+  left: 63.5%;
+  transform: translate(-50%, -50%);
+}
+.secondstep {
+  font-size: 23px;
+  font-weight: 500;
+  position: absolute;
+  top: 46%;
+  left:59%;
+  transform: translate(-50%, -50%);
+}
+.thirdstep {
+  font-size: 23px;
+  font-weight: 500;
+  position: absolute;
+  top: 62%;
+  left:61.5%;
+  transform: translate(-50%, -50%);
+}
+.fourthstep {
+  font-size: 23px;
+  font-weight: 500;
+  position: absolute;
+  top: 80%;
+  left:64%;
+  transform: translate(-50%, -50%);
+}
+.downloadhead{
+  margin: 50px;
+  
+}
+.featuresub{
+  box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  background-color:#F1EFEF;
+  height: 110px;
+  margin-left:40px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.featuresub2{
+  box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  background-color:#e1e4c2;
+  height: 140px;
+  margin-left:40px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.featurehead{
+  text-align: center;
+  margin: 20px;
+  font-weight: 400;
+}
+.featurehead2{
+  text-align: center;
+  margin: 20px;
+  font-weight: 400;
+}
+.featurefrom2{
+  float: right;
+}
