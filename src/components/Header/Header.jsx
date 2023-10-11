@@ -17,10 +17,11 @@ function Header() {
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              data-bs-theme="dark"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                Coin.new
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>

@@ -14,27 +14,31 @@ import testi2 from "../../assets/testimonials/testimonials-3.jpg";
 import testi3 from "../../assets/testimonials/testimonials-2.jpg";
 import testi4 from "../../assets/testimonials/testimonials-1.jpg";
 import testi5 from "../../assets/testimonials/testimonials-2.jpg";
-
 import Carousel from "react-bootstrap/Carousel";
 function Home() {
   return (
     <div>
       <div>
         <div className={classes.container}>
-          <img src={home1} style={{ width: "100%", height: "auto" }} />
-          <h1 className={classes.textStyled}>
-            We Helps you in saving & investing
-          </h1>
-          <p className={classes.textStyled2}>
-            Invest spare change, invest while you bank, earn bonus investments,
-            grow your knowledge and more.
-          </p>
-          <Button className={classes.buttonStyled} variant="primary">
-            Start Now
-          </Button>
-          <Button className={classes.buttonStyled2} variant="primary">
-            Learn More
-          </Button>
+          <img
+            src={home1}
+            style={{ width: "100%", maxHeight: "500px", minHeight: "400px" }}
+          />
+          <div className={classes.box}>
+            <h1 className={classes.textStyled}>
+              We Helps you in saving & investing
+            </h1>
+            <p className={classes.textStyled2}>
+              Invest spare change, invest while you bank, earn bonus
+              investments, grow your knowledge and more.
+            </p>
+            <Button className={classes.buttonStyled} variant="primary">
+              Start Now
+            </Button>
+            <Button className={classes.buttonStyled2} variant="primary">
+              Learn More
+            </Button>
+          </div>
         </div>
       </div>
       <div>
@@ -77,7 +81,7 @@ function Home() {
 
       <div>
         <div className={classes.container2}>
-          <img src={howto} style={{ width: "100%", height: "auto" }} />
+          <img src={howto} style={{ width: "100%", minHeight: "200px" }} />
           {/* <p className={classes.firststep}>Register using your mobile no.</p>
           <p className={classes.secondstep}>Complete your KYC.</p>
           <p className={classes.thirdstep}> Link bank account via UPI.</p>
@@ -290,32 +294,36 @@ function Home() {
           </div>
         </section>
       </div>
-      <div
-        style={{ backgroundColor: "#FFF2D8", display: "flex", padding: "40px" }}
-      >
-        <div className={classes.container3} style={{ flex: 1 }}>
-          <h1 className={classes.downloadhead}>
-            Experience the new-gen fast Investing app
-          </h1>
-          <a
-            href="https://drive.google.com/drive/folders/13nhCNOZkKchlp7OqBa6d15_zLWi8e1rg?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <Container fluid style={{ backgroundColor: "#FFF2D8" }}>
+        <Row>
+          <Col md={8} className="d-flex align-items-center">
+            <div style={{ paddingBottom: "20px" }}>
+              <h1 className={classes.downloadhead}>
+                Experience the new-gen fast Investing app
+              </h1>
+              <center>
+                <a
+                  href="https://drive.google.com/drive/folders/13nhCNOZkKchlp7OqBa6d15_zLWi8e1rg?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={downloadbtn}
+                    style={{ height: "90px", cursor: "pointer" }}
+                    alt="Download Button"
+                  />
+                </a>
+              </center>
+            </div>
+          </Col>
+          <Col className="d-flex align-items-center p-2">
             <img
-              src={downloadbtn}
-              style={{ width: "30%", marginLeft: "35%", cursor: "pointer" }}
-              alt="Download Button"
+              src={playstore}
+              style={{ width: "90%", minHeight: "200px", marginLeft: "10px" }}
             />
-          </a>
-        </div>
-        <div className={classes.container4} style={{ flex: 1 }}>
-          <img
-            src={playstore}
-            style={{ width: "50%", height: "auto", marginLeft: "10px" }}
-          />
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

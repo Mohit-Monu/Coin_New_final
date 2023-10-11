@@ -5,37 +5,61 @@ import styles from "./About.module.css";
 import ourmission from "../../assets/ourmission.json";
 import ourvalue from "../../assets/ourvalue.json";
 import vision from "../../assets/vision.json";
-
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Lottie from "lottie-react";
 
 function About() {
   return (
     <div className="container">
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <div style={{ flex: "3", paddingRight: "20px",boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",backgroundColor:"#F1EFEF" }}>
-          <h2 className="text-center m-2">Our Mission</h2>
-          <p style={{paddingLeft:"10px"}}>
-            At Coin.New, our unwavering mission is to empower individuals of all
-            backgrounds to chart a course towards financial success through
-            informed investment choices made early in their lives. We firmly
-            believe in the fundamental principle that everyone should embark on
-            their investment journey at the earliest opportunity, securing a
-            solid financial foundation that paves the way for a prosperous and
-            secure future.
-          </p>
-        </div>
-        <div style={{ flex: "2", height: "400px" }}>
-          <Lottie style={{ height: "100%" }} animationData={ourmission} />
-        </div>
-      </div>
+      <Container>
+        <Row >
+          <Col md={8} className="d-flex align-items-center">
+            <div
+              style={{
+                paddingRight: "20px",
+                boxShadow:
+                  "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
+                backgroundColor: "#F1EFEF",
+              }}
+            >
+              <h2 className="text-center m-2">Our Mission</h2>
+              <p style={{ padding: "10px" }}>
+                At Coin.New, our unwavering mission is to empower individuals of
+                all backgrounds to chart a course towards financial success
+                through informed investment choices made early in their lives.
+                We firmly believe in the fundamental principle that everyone
+                should embark on their investment journey at the earliest
+                opportunity, securing a solid financial foundation that paves
+                the way for a prosperous and secure future.
+              </p>
+            </div>
+          </Col>
+          <Col className="d-flex align-items-center">
+            <Lottie style={{ height: "400px" }} animationData={ourmission} />
+          </Col>
+        </Row>
+      </Container>
+  
       <hr />
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <div style={{ flex: "2", height: "400px" }}>
-          <Lottie style={{ height: "100%" }} animationData={vision} />
-        </div>
-        <div style={{ flex: "3", paddingRight: "20px",boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",backgroundColor:"#F1EFEF"  }}>
-          <h2 className="text-center m-2">Our Vision</h2>
-          <p style={{paddingLeft:"10px"}}>
+
+      <Container>
+        <Row >
+        <Col className="d-flex align-items-center">
+            <Lottie style={{ height: "400px" }} animationData={vision} />
+          </Col>
+          <Col md={8} className="d-flex align-items-center">
+            <div
+              style={{
+                paddingRight: "20px",
+                boxShadow:
+                  "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
+                backgroundColor: "#F1EFEF",
+              }}
+            >
+              <h2 className="text-center m-2">Our Vision</h2>
+          <p style={{ paddingLeft: "10px" }}>
             Our vision is to democratize investing and empower individuals from
             all walks of life to achieve financial freedom. At Coin.edu , we
             believe that every rupee counts, which is why we're pioneering a
@@ -47,12 +71,25 @@ function About() {
             the world of investing, setting the stage for a more inclusive and
             prosperous tomorrow.
           </p>
-        </div>
-      </div>
+          </div>
+          </Col>
+        </Row>
+      </Container>
+
       <hr />
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <div style={{ flex: "3", paddingRight: "20px",boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",backgroundColor:"#F1EFEF"   }}>
-          <h2 className=" text-center m-2">Our Values</h2>
+
+      <Container>
+        <Row >
+          <Col md={8} className="d-flex align-items-center">
+            <div
+              style={{
+                paddingRight: "20px",
+                boxShadow:
+                  "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
+                backgroundColor: "#F1EFEF",
+              }}
+            >
+              <h2 className=" text-center m-2">Our Values</h2>
           <ul>
             <li>
               <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
@@ -85,11 +122,13 @@ function About() {
               impact on the world while earning returns on your investments.
             </li>
           </ul>
-        </div>
-        <div style={{ flex: "2", height: "400px" }}>
-          <Lottie style={{ height: "400px" }} animationData={ourvalue} />
-        </div>
-      </div>
+            </div>
+          </Col>
+          <Col className="d-flex align-items-center">
+            <Lottie style={{ height: "400px" }} animationData={ourvalue} />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
