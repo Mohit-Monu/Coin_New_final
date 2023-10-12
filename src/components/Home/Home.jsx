@@ -16,6 +16,38 @@ import testi4 from "../../assets/testimonials/testimonials-1.jpg";
 import testi5 from "../../assets/testimonials/testimonials-2.jpg";
 import Carousel from "react-bootstrap/Carousel";
 function Home() {
+  const testimonial = [
+    {
+      name: "Samantha",
+      at: "Entrepreneur",
+      image: testi1,
+      data: "I love how effortless saving has become with this platform. Daily deposits, spare change, and the chance to participate in Chitpool make saving and investing a breeze. It's like having a financial advisor in my pocket!",
+    },
+    {
+      name: "Raj",
+      at: "Tech",
+      image: testi2,
+      data: "The flexibility to invest both small and large sums on my own terms is a game-changer. This platform aligns perfectly with my financial goals. I see a brighter financial future ahead.",
+    },
+    {
+      name: "Neha",
+      at: "Designer",
+      image: testi3,
+      data: "As someone who values ethical investing, I appreciate the option to invest in ethical mutual funds. It feels great to know my money is making a positive impact while it grows.",
+    },
+    {
+      name: "Akshay",
+      at: "Tech",
+      image: testi4,
+      data: "Chitpool adds an element of excitement to saving. I eagerly await the weekly draws for rewards and cash prizes. It's a fun way to boost my savings while staying engaged.",
+    },
+    {
+      name: "Riya",
+      at: "Designer",
+      image: testi5,
+      data: "The future of finance is here, and I'm loving it! This platform makes investing accessible to everyone, no matter their financial background. It's user-friendly and has opened up new possibilities for my financial journey.",
+    },
+  ];
   return (
     <div>
       <div>
@@ -35,12 +67,18 @@ function Home() {
             <Button className={classes.buttonStyled} variant="primary">
               Start Now
             </Button>
-            <Button className={classes.buttonStyled2} variant="primary">
+            <Button
+              className={classes.buttonStyled2}
+              style={{ marginTop: "10px" }}
+              variant="primary"
+            >
               Learn More
             </Button>
           </div>
         </div>
       </div>
+      <hr/>
+
       <div>
         <h1 className={classes.featurehead}>Features</h1>
         <Container>
@@ -78,6 +116,7 @@ function Home() {
           </Row>
         </Container>
       </div>
+      <hr/>
 
       <div>
         <div className={classes.container2}>
@@ -88,12 +127,12 @@ function Home() {
           <p className={classes.fourthstep}>Start investing with minimum ₹1.</p> */}
         </div>
       </div>
+      <hr/>
 
       <div>
         <section
           id="testimonials"
           className="testimonials section-bg"
-          style={{ backgroundColor: "grey" }}
         >
           <div className="container" data-aos="fade-up">
             <div className="section-header">
@@ -102,204 +141,55 @@ function Home() {
                 What Are They <span>Saying About Us</span>
               </p>
             </div>
-            <Carousel>
-              <Carousel.Item>
-                <div
-                  className="slides-1 swiper"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="testimonial-item">
-                        <div className="row gy-4 justify-content-center">
-                          <div className="col-lg-6">
-                            <div className="testimonial-content">
-                              <p>
-                                <i className="bi bi-quote quote-icon-left"></i>
-                                "I love how effortless saving has become with
-                                this platform. Daily deposits, spare change, and
-                                the chance to participate in Chitpool make
-                                saving and investing a breeze. It's like having
-                                a financial advisor in my pocket!"
-                                <i className="bi bi-quote quote-icon-right"></i>
-                              </p>
-                              <h3>Samantha</h3>
-                              <h4>Entrepreneur</h4>
+            <Carousel style={{paddingBottom:"50px"}}>
+              {testimonial.map((item) => (
+                <Carousel.Item>
+                  <div
+                    className="slides-1 swiper "
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <div className="swiper-wrapper">
+                      <div className="swiper-slide">
+                        <div className="testimonial-item">
+                          <div className="row gy-4 justify-content-center">
+                            <div className="col-lg-6">
+                              <div className="testimonial-content">
+                                <b>
+                                  <i className="bi bi-quote quote-icon-left"></i>
+                                  {item.data}
+                                  <i className="bi bi-quote quote-icon-right"></i>
+                                </b>
+                                <h3> {item.name}</h3>
+                                <h4 style={{color:"red"}}> {item.at}</h4>
+                              </div>
                             </div>
-                          </div>
-                          <div className="col-lg-2 text-center">
-                            <img
-                              src={testi1}
-                              className="img-fluid testimonial-img"
-                              alt=""
-                            />
+                            <div className="col-lg-2 text-center">
+                              <img
+                                src={item.image}
+                                className="img-fluid testimonial-img"
+                                alt=""
+                                style={{maxHeight:"128px"}}
+                              />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div
-                  className="slides-1 swiper"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="testimonial-item">
-                        <div className="row gy-4 justify-content-center">
-                          <div className="col-lg-6">
-                            <div className="testimonial-content">
-                              <p>
-                                <i className="bi bi-quote quote-icon-left"></i>
-                                "The flexibility to invest both small and large
-                                sums on my own terms is a game-changer. This
-                                platform aligns perfectly with my financial
-                                goals. I see a brighter financial future ahead."
-                                <i className="bi bi-quote quote-icon-right"></i>
-                              </p>
-                              <h3>Raj</h3>
-                              <h4>Tech</h4>
-                            </div>
-                          </div>
-                          <div className="col-lg-2 text-center">
-                            <img
-                              src={testi2}
-                              className="img-fluid testimonial-img"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div
-                  className="slides-1 swiper"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="testimonial-item">
-                        <div className="row gy-4 justify-content-center">
-                          <div className="col-lg-6">
-                            <div className="testimonial-content">
-                              <p>
-                                <i className="bi bi-quote quote-icon-left"></i>
-                                "As someone who values ethical investing, I
-                                appreciate the option to invest in ethical
-                                mutual funds. It feels great to know my money is
-                                making a positive impact while it grows."
-                                <i className="bi bi-quote quote-icon-right"></i>
-                              </p>
-                              <h3>Neha</h3>
-                              <h4>Designer</h4>
-                            </div>
-                          </div>
-                          <div className="col-lg-2 text-center">
-                            <img
-                              src={testi3}
-                              className="img-fluid testimonial-img"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div
-                  className="slides-1 swiper"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="testimonial-item">
-                        <div className="row gy-4 justify-content-center">
-                          <div className="col-lg-6">
-                            <div className="testimonial-content">
-                              <p>
-                                <i className="bi bi-quote quote-icon-left"></i>
-                                "Chitpool adds an element of excitement to
-                                saving. I eagerly await the weekly draws for
-                                rewards and cash prizes. It's a fun way to boost
-                                my savings while staying engaged."
-                                <i className="bi bi-quote quote-icon-right"></i>
-                              </p>
-                              <h3>Akshay</h3>
-                              <h4>Tech</h4>
-                            </div>
-                          </div>
-                          <div className="col-lg-2 text-center">
-                            <img
-                              src={testi4}
-                              className="img-fluid testimonial-img"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <div
-                  className="slides-1 swiper"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="testimonial-item">
-                        <div className="row gy-4 justify-content-center">
-                          <div className="col-lg-6">
-                            <div className="testimonial-content">
-                              <p>
-                                <i className="bi bi-quote quote-icon-left"></i>
-                                "The future of finance is here, and I'm loving
-                                it! This platform makes investing accessible to
-                                everyone, no matter their financial background.
-                                It's user-friendly and has opened up new
-                                possibilities for my financial journey."
-                                <i className="bi bi-quote quote-icon-right"></i>
-                              </p>
-                              <h3>Riya</h3>
-                              <h4>Designer</h4>
-                            </div>
-                          </div>
-                          <div className="col-lg-2 text-center">
-                            <img
-                              src={testi5}
-                              className="img-fluid testimonial-img"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Carousel.Item>
+                </Carousel.Item>
+              ))}
             </Carousel>
           </div>
         </section>
       </div>
-      <Container fluid style={{ backgroundColor: "#FFF2D8" }}>
+      <hr/>
+      <Container fluid>
         <Row>
           <Col md={8} className="d-flex align-items-center">
             <div style={{ paddingBottom: "20px" }}>
               <h1 className={classes.downloadhead}>
-                Experience the new-gen fast Investing app
+                Download the new-gen fast Investing app launching soon
               </h1>
               <center>
                 <a
@@ -309,7 +199,7 @@ function Home() {
                 >
                   <img
                     src={downloadbtn}
-                    style={{ height: "90px", cursor: "pointer" }}
+                    style={{ height: "50px", cursor: "pointer" }}
                     alt="Download Button"
                   />
                 </a>
@@ -327,5 +217,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

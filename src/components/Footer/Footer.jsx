@@ -5,19 +5,19 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"; // Import so
 
 function Footer() {
   return (
-    <footer className="bg-dark text-light py-5">
+    <footer className=" py-5" style={{borderTop:"1px solid black"}}>
       <div className="container">
         <div className="row">
           <div className="col-md-6">
             <h5>Follow Us</h5>
             <ul className="list-unstyled d-flex">
               <li className="me-3">
-                <a href="#" className="text-light">
+                <a href="#" style={{fontSize:"30px"}}>
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
               <li>
-                <a href="#" className="text-light">
+                <a href="#" style={{fontSize:"30px"}}>
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>

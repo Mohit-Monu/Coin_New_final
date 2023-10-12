@@ -99,18 +99,6 @@ function About() {
             </li>
             <li>
               <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-              <strong> User-Friendly Interface:</strong> Our intuitive platform
-              makes investing a breeze, even for beginners. Access your
-              investments, track your earnings, and make decisions with ease.
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-              <strong> Diverse Investment Options:</strong> Choose from a
-              variety of investment opportunities tailored to your financial
-              goals and risk tolerance.
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
               <strong> Educational Resources:</strong> We believe in empowering
               our users. Explore our educational content to enhance your
               financial knowledge and make informed investment decisions.

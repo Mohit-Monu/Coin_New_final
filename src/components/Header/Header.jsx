@@ -7,17 +7,16 @@ function Header() {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} bg="dark" data-bs-theme="dark">
+        <Navbar key={expand} expand={expand}>
           <Container fluid>
             <Navbar.Brand href="#">
-              <img style={{width:"100px",marginRight:"20px"}} src={logo}/>
-              Coin.new</Navbar.Brand>
+              <img style={{width:"170px",height:"50px",marginRight:"20px"}} src={logo}/>
+              </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
-              data-bs-theme="dark"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
@@ -26,9 +25,9 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="/" className='text-light'>Home</Nav.Link>
-                  <Nav.Link href="/about"className='text-light'>About Us</Nav.Link>
-                  <Nav.Link href="/faq"className='text-light'>FAQ</Nav.Link>
+                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="/about">About Us</Nav.Link>
+                  <Nav.Link href="/faq">FAQ</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
