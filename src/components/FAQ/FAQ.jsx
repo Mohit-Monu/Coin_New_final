@@ -8,88 +8,66 @@ function FAQ() {
 
   const questions = [
     {
-      question: "Why Choose Coin.New?",
+      question: "How Coin.new Works",
+      answer: "Coin.new simplifies investing, allowing you to start with just 10 Rupees. We invest your money in expert-managed mutual funds. Choose automatic daily deposits or invest spare change from everyday transactions. It's hassle-free investing!"
+    },
+    {
+      question: "Key Features",
       answer: (
         <ul>
           <li>
             <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> Free and Secure:</strong> Enjoy the benefits of investing without any hidden charges or security concerns. We prioritize the safety and growth of your investments.
+            <strong> Low Minimum:</strong> Begin investing with only 10 Rupees.
           </li>
           <li>
             <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> High-Yield Secure:</strong> We offer competitive interest rates, ensuring your hand-earned money works harder for you. Watch your funds multiply effortlessly.
+            <strong> Daily Deposits:</strong> Save money daily with automated deposits.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
+            <strong> Spare Change:</strong> Invest your change from daily purchases.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
+            <strong> Lump Sum:</strong> Save fixed amounts at your convenience.
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
+            <strong> Flexible Limits:</strong> Adjust your investment amount anytime to match your goals.
           </li>
         </ul>
       ),
     },
     {
-      question: "How to use?",
+      question: "Getting Started",
       answer: (
-        // <p>Our investment platform is designed to make the investment process seamless and hassle-free: </p>
+        <>
+        <p>To start, you need a few basic documents:</p>
         <ul>
           <li>
-            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> Free and Secure:</strong> Enjoy the benefits of investing without any hidden charges or security concerns. We prioritize the safety and growth of your investments.
+            <strong>1 </strong> Your PAN (Permanent Account Number) card.
           </li>
           <li>
-            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> High-Yield Secure:</strong> We offer competitive interest rates, ensuring your hand-earned money works harder for you. Watch your funds multiply effortlessly.
+            <strong>1 </strong> KYC (Know Your Customer) documents, which are easy to provide.
+          </li>
+          <li>
+            <strong>1 </strong> A linked bank account for seamless transactions.
           </li>
         </ul>
-      ),
-    },
-    {
-      question: "Join Thousands of Savvy Investors",
-      answer: (
-        // <p>Our investment platform is designed to make the investment process seamless and hassle-free: </p>
-        <ul>
-          <li>
-            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> Free and Secure:</strong> Enjoy the benefits of investing without any hidden charges or security concerns. We prioritize the safety and growth of your investments.
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> High-Yield Secure:</strong> We offer competitive interest rates, ensuring your hand-earned money works harder for you. Watch your funds multiply effortlessly.
-          </li>
-        </ul>
+        </>
       ),
     },{
-      question: "Join Thousands of Savvy Investors",
-      answer: (
-        // <p>Our investment platform is designed to make the investment process seamless and hassle-free: </p>
-        <ul>
-          <li>
-            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> Free and Secure:</strong> Enjoy the benefits of investing without any hidden charges or security concerns. We prioritize the safety and growth of your investments.
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> High-Yield Secure:</strong> We offer competitive interest rates, ensuring your hand-earned money works harder for you. Watch your funds multiply effortlessly.
-          </li>
-        </ul>
-      ),
+      question: "Where Your Money Goes",
+      answer: "Your invested money goes into ethical mutual funds, managed by financial experts dedicated to growing your investments while upholding ethical standards."
     },{
-      question: "Join Thousands of Savvy Investors",
-      answer: (
-        // <p>Our investment platform is designed to make the investment process seamless and hassle-free: </p>
-        <ul>
-          <li>
-            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> Free and Secure:</strong> Enjoy the benefits of investing without any hidden charges or security concerns. We prioritize the safety and growth of your investments.
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faCheckCircle} className={styles.icon} />
-            <strong> High-Yield Secure:</strong> We offer competitive interest rates, ensuring your hand-earned money works harder for you. Watch your funds multiply effortlessly.
-          </li>
-        </ul>
-      ),
+      question: "Changing Your Investment Limit",
+      answer: "Absolutely! You have full control over your investments. Adjust your investment amount anytime, increasing or decreasing it to align with your financial goals."
     },
-    // Add more questions and answers as needed
   ];
 
   const toggleAccordion = (index) => {
     if (index === isOpen) {
-      setIsOpen(-1); // Close the currently open question if it's clicked again
+      setIsOpen(-1);
     } else {
       setIsOpen(index);
     }
