@@ -5,7 +5,7 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"; // Import so
 
 function Footer() {
   return (
-    <footer className=" py-5" style={{borderTop:"1px solid black"}}>
+    <footer className=" py-5" style={{borderTop:"1px solid black",backgroundColor:"#F1EFEF"}}>
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -13,12 +13,12 @@ function Footer() {
             <ul className="list-unstyled d-flex">
               <li className="me-3">
                 <a href="#" style={{fontSize:"30px"}}>
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faTwitter} style={{color:"black"}} />
                 </a>
               </li>
               <li>
                 <a href="#" style={{fontSize:"30px"}}>
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon icon={faLinkedin} style={{color:"black"}}/>
                 </a>
               </li>
               {/* Add more brand icons as needed */}

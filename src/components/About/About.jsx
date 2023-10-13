@@ -12,15 +12,16 @@ import Lottie from "lottie-react";
 
 function About() {
   return (
-    <div className="container">
-      <Container>
-        <Row>
-          <Col md={8} className="d-flex align-items-center">
+    <div >
+      <Container fluid >
+        <Row className="justify-content-evenly">
+          <Col md={9} className="d-flex align-items-center">
             <div
               style={{
                 boxShadow:
                   "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
                 backgroundColor: "#F1EFEF",
+                margin:"10px"
               }}
             >
               <h2 className="text-center m-2">Our Mission</h2>
@@ -31,25 +32,24 @@ function About() {
               </p>
             </div>
           </Col>
-          <Col className="d-flex align-items-center">
-            <Lottie style={{ height: "300px" }} animationData={ourmission} />
+          <Col md={3} className="d-flex align-items-center justify-content-center">
+            <Lottie style={{ width: "100%",maxWidth:"300px"}} animationData={ourmission} />
           </Col>
         </Row>
       </Container>
-
       <hr />
-
-      <Container>
-        <Row>
-          <Col className="d-flex align-items-center">
-            <Lottie style={{ height: "300px" }} animationData={vision} />
+      <Container fluid>
+        <Row className="justify-content-evenly"style={{marginTop:"40px",marginBottom:"40px"}}>
+          <Col md={3} className="d-flex align-items-center justify-content-center">
+            <Lottie style={{ width: "100%",maxWidth:"300px" }} animationData={vision} />
           </Col>
-          <Col md={8} className="d-flex align-items-center">
+          <Col md={9} className="d-flex align-items-center">
             <div
               style={{
                 boxShadow:
                   "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
                 backgroundColor: "#F1EFEF",
+                margin:"10px"
               }}
             >
               <h2 className="text-center m-2">Our Vision</h2>
@@ -65,14 +65,15 @@ function About() {
 
       <hr />
 
-      <Container>
-        <Row className="m-2">
-          <Col md={8} className="d-flex align-items-center ">
+      <Container fluid >
+        <Row className="justify-content-evenly"style={{marginTop:"40px",marginBottom:"40px"}}>
+          <Col md={9}  className="d-flex align-items-center">
             <div
               style={{
                 boxShadow:
                   "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
                 backgroundColor: "#F1EFEF",
+                margin:"10px"
               }}
             >
               <h2 className=" text-center m-2">Our Values</h2>
@@ -110,8 +111,8 @@ function About() {
               </ul>
             </div>
           </Col>
-          <Col className="d-flex align-items-center">
-            <Lottie style={{ height: "300px" }} animationData={ourvalue} />
+          <Col className="d-flex align-items-center justify-content-center">
+            <Lottie style={{ width: "100%",maxWidth:"300px" }} animationData={ourvalue} />
           </Col>
         </Row>
       </Container>

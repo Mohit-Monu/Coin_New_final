@@ -7,10 +7,10 @@ function Header() {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar key={expand} expand={expand}>
+        <Navbar key={expand} expand={expand} style={{backgroundColor:"#F1EFEF"}}>
           <Container fluid>
             <Navbar.Brand href="#">
-              <img style={{width:"170px",height:"50px",marginRight:"20px"}} src={logo}/>
+              <img style={{width:"170px",height:"50px",marginLeft:"40px"}} src={logo}/>
               </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -25,9 +25,10 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/about">About Us</Nav.Link>
-                  <Nav.Link href="/faq">FAQ</Nav.Link>
+                  <Nav.Link href="/" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>Home</Nav.Link>
+                  <Nav.Link href="/about" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>About Us</Nav.Link>
+                  <Nav.Link href="/contact" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>Contact Us</Nav.Link>
+                  <Nav.Link href="/faq" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>FAQ</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
