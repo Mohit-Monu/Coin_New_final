@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from "../../assets/logo.jpeg"
 function Header() {
+
   return (
     <>
       {['sm'].map((expand) => (
@@ -27,8 +28,9 @@ function Header() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>Home</Nav.Link>
                   <Nav.Link href="/about" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>About Us</Nav.Link>
-                  <Nav.Link href="/contact" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>Contact Us</Nav.Link>
                   <Nav.Link href="/faq" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>FAQ</Nav.Link>
+                  <Nav.Link href="/contact" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>Contact Us</Nav.Link>
+                  <Nav.Link href="/getstarted" style={{fontSize:"20px",color:"black",fontWeight:"400"}} >Get Started</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

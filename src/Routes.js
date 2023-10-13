@@ -14,6 +14,8 @@ function AppRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/:getstarted" element={<Home />} />
+
       </Routes>
     </Router>
   );

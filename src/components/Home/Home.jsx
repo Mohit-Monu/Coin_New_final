@@ -14,7 +14,18 @@ import testi2 from "../../assets/testimonials/testimonials-3.jpg";
 import testi3 from "../../assets/testimonials/testimonials-2.jpg";
 import testi4 from "../../assets/testimonials/testimonials-1.jpg";
 import Carousel from "react-bootstrap/Carousel";
+import { useParams } from "react-router";
 function Home() {
+  const { getstarted } = useParams();
+
+  React.useEffect(() => {
+    if (getstarted) {
+      const section = document.getElementById("sectionId");
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [getstarted]);
   const testimonial = [
     {
       name: "Nikhil",
@@ -43,15 +54,12 @@ function Home() {
   ];
   return (
     <div>
-      <Container fluid className="mt-2">
+      <Container fluid className="mt-5 mb-5">
         <Row style={{ display: "flex", alignItems: "center" }}>
           <Col md={8}>
             <div className="section-header">
               <h1>
-                Your Gateway to Affordable{" "}
-                <p>
-                  <span> Investing</span>
-                </p>
+                Your Gateway to Affordable Investing
               </h1>
             </div>
             <h4 className="text-center">
@@ -71,7 +79,7 @@ function Home() {
         </Row>
       </Container>
       <hr />
-      <div>
+      <div id="sectionId">
         <div className={classes.container2}>
           <img src={howto} style={{ width: "100%", minHeight: "200px" }} />
           {/* <p className={classes.firststep}>Register using your mobile no.</p>
@@ -81,7 +89,7 @@ function Home() {
         </div>
       </div>
       <hr />
-      <div>
+      <div >
         <h1 className={classes.featurehead}>Features</h1>
         <Container fluid>
           <Row className="justify-content-evenly">
