@@ -59,11 +59,10 @@ function Home() {
           <Col md={8}>
             <div className="section-header">
               <h1>
-                Your Gateway to Affordable Investing
+                Your Gateway to Affordable <span style={{color:"red"}}>Investing!</span>
               </h1>
             </div>
             <h4 className="text-center">
-              Are you ready to embark on a financial journey like never before?
               At coin.new we empower you to save, invest and take charge of your
               future. We understand the aspirations of millennials and Gen Z,
               and we're here to help you make your money work for you no matter
@@ -82,10 +81,6 @@ function Home() {
       <div id="sectionId">
         <div className={classes.container2}>
           <img src={howto} style={{ width: "100%", minHeight: "200px" }} />
-          {/* <p className={classes.firststep}>Register using your mobile no.</p>
-          <p className={classes.secondstep}>Complete your KYC.</p>
-          <p className={classes.thirdstep}> Link bank account via UPI.</p>
-          <p className={classes.fourthstep}>Start investing with minimum ₹1.</p> */}
         </div>
       </div>
       <hr />
