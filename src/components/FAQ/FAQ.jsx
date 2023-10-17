@@ -8,11 +8,11 @@ function FAQ() {
 
   const questions = [
     {
-      question: "How Coin.new Works",
+      question: "How Coin.new Works?",
       answer: "Coin.new simplifies investing, allowing you to start with just 10 Rupees. We invest your money in expert-managed mutual funds. Choose automatic daily deposits or invest spare change from everyday transactions. It's hassle-free investing!"
     },
     {
-      question: "Key Features",
+      question: "What Are The Key Features?",
       answer: (
         <ul>
           <li>
@@ -39,28 +39,28 @@ function FAQ() {
       ),
     },
     {
-      question: "Getting Started",
+      question: "What Are The Documents Required?",
       answer: (
         <>
         <p>To start, you need a few basic documents:</p>
         <ul>
           <li>
-            <strong>1 </strong> Your PAN (Permanent Account Number) card.
+             Your PAN (Permanent Account Number) card.
           </li>
           <li>
-            <strong>1 </strong> KYC (Know Your Customer) documents, which are easy to provide.
+             KYC (Know Your Customer) documents, which are easy to provide.
           </li>
           <li>
-            <strong>1 </strong> A linked bank account for seamless transactions.
+             A linked bank account for seamless transactions.
           </li>
         </ul>
         </>
       ),
     },{
-      question: "Where Your Money Goes",
+      question: "Where Your Money Goes?",
       answer: "Your invested money goes into ethical mutual funds, managed by financial experts dedicated to growing your investments while upholding ethical standards."
     },{
-      question: "Changing Your Investment Limit",
+      question: "Can I Change My Auto Payments Limit?",
       answer: "Absolutely! You have full control over your investments. Adjust your investment amount anytime, increasing or decreasing it to align with your financial goals."
     },
   ];

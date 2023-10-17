@@ -30,8 +30,7 @@ function Header() {
                   <Nav.Link href="/" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>Home</Nav.Link>
                   <Nav.Link href="/about" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>About Us</Nav.Link>
                   <Nav.Link href="/faq" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>FAQ</Nav.Link>
-                  <Nav.Link href="/contact" style={{fontSize:"20px",color:"black",fontWeight:"400"}}>Contact Us</Nav.Link>
-                  <Nav.Link href="/getstarted" ><Button variant="outline-info " style={{fontSize:"20px",color:"black",fontWeight:"400"}} >Get Started</Button></Nav.Link>
+                  <Nav.Link href="/contact" ><Button variant="outline-info " style={{fontSize:"20px",color:"black",fontWeight:"400"}} >Contact Us</Button></Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
