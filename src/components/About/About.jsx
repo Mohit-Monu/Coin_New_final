@@ -12,12 +12,12 @@ function About() {
   return (
     <div>
       <Container fluid>
-        <Row className="justify-content-evenly">
+        <Row className="justify-content-evenly mt-3">
           <Col
             md={5}
             className="d-flex align-items-center justify-content-center"
           >
-            <img className="img-fluid" src={aboutUs} />
+            <img className="img-fluid" src={aboutUs} style={{maxHeight:"300px"}}/>
           </Col>
           <Col md={7} className=" d-flex align-items-center">
             <div>
