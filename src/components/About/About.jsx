@@ -17,20 +17,34 @@ function About() {
             md={5}
             className="d-flex align-items-center justify-content-center"
           >
-            <img className="img-fluid" src={aboutUs} style={{maxHeight:"300px"}}/>
+            <img
+              className="img-fluid"
+              src={aboutUs}
+              style={{ maxHeight: "300px" }}
+            />
           </Col>
           <Col md={7} className=" d-flex align-items-center">
-            <div>
-              <h1 className="text-center">About Us</h1>
-              <p style={{ fontSize: "20px" }}>
-                Join us at Coin.new, where we're simplifying financial success.
-                We offer smart investment options, including daily deposits,
-                spare change investing, lump sums, and chitpool participation
-                with great perks. Expect consistent 10% annual growth, all
-                supported by ethical mutual funds. Your path to a brighter
-                financial future begins here. Invest smart, invest sustainably,
-                and watch your wealth grow.
-              </p>
+            <div
+              style={{
+                boxShadow:
+                  "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
+                backgroundColor: "#F1EFEF",
+                margin: "10px",
+                padding: "17px",
+              }}
+            >
+              <div>
+                <h1 className="text-center">About Us</h1>
+                <p style={{ fontSize: "20px" }}>
+                  Join us at Coin.new, where we're simplifying financial
+                  success. We offer smart investment options, including daily
+                  deposits, spare change investing, lump sums, and chitpool
+                  participation with great perks. Expect consistent 10% annual
+                  growth, all supported by ethical mutual funds. Your path to a
+                  brighter financial future begins here. Invest smart, invest
+                  sustainably, and watch your wealth grow.
+                </p>
+              </div>
             </div>
           </Col>
         </Row>
@@ -44,11 +58,11 @@ function About() {
                 boxShadow:
                   "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
                 backgroundColor: "#F1EFEF",
-                margin: "10px",
+                margin: "15px",
               }}
             >
               <h2 className="text-center m-2">Our Mission</h2>
-              <p style={{ padding: "10px" }}>
+              <p style={{ padding: "17px" }}>
                 At Coin.new, our mission is to democratize financial success by
                 making informed and early investment opportunities accessible to
                 everyone. We believe in empowering individuals, regardless of
@@ -93,11 +107,11 @@ function About() {
                 boxShadow:
                   "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
                 backgroundColor: "#F1EFEF",
-                margin: "10px",
+                margin: "15px",
               }}
             >
               <h2 className="text-center m-2">Our Vision</h2>
-              <p style={{ paddingLeft: "10px" }}>
+              <p style={{ padding: "17px" }}>
                 Our vision at Coin.new is to foster a world where financial
                 well-being is within everyone's reach. We aspire to create a
                 future where individuals, regardless of their financial
@@ -127,39 +141,32 @@ function About() {
                 boxShadow:
                   "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
                 backgroundColor: "#F1EFEF",
-                margin: "10px",
+                margin: "15px",
+                padding:"17px"
               }}
             >
               <h2 className=" text-center m-2">Our Values</h2>
-              <ul>
-                <li>
-                  <strong> Accessibility:</strong> We believe that everyone
-                  should have the opportunity to achieve financial success, so
-                  we work to make investing accessible to all, regardless of
-                  financial background.
-                </li>
-                <li>
-                  <strong> Innovation:</strong> We embrace innovation, using
-                  cutting-edge technology and user-centric design to provide the
-                  best possible investment experience.
-                </li>
-                <li>
-                  <strong> Empowerment:</strong> Our mission is to empower
-                  individuals to take control of their financial destinies,
-                  fostering a more resilient and prosperous society.
-                </li>
-                <li>
-                  <strong> Transparency:</strong> We are dedicated to providing
-                  transparent, honest, and trustworthy financial services to our
-                  users.
-                </li>
-                <li>
-                  <strong> Inclusivity:</strong> We're committed to creating an
-                  inclusive and diverse community of investors, where everyone
-                  can grow and thrive together. We're steadfast in our
-                  commitment to helping you achieve your financial goals.
-                </li>
-              </ul>
+              <strong> Accessibility:</strong> We believe that everyone should
+              have the opportunity to achieve financial success, so we work to
+              make investing accessible to all, regardless of financial
+              background.
+              <br />
+              <strong> Innovation:</strong> We embrace innovation, using
+              cutting-edge technology and user-centric design to provide the
+              best possible investment experience.
+              <br />
+              <strong> Empowerment:</strong> Our mission is to empower
+              individuals to take control of their financial destinies,
+              fostering a more resilient and prosperous society.
+              <br />
+              <strong> Transparency:</strong> We are dedicated to providing
+              transparent, honest, and trustworthy financial services to our
+              users.
+              <br />
+              <strong> Inclusivity:</strong> We're committed to creating an
+              inclusive and diverse community of investors, where everyone can
+              grow and thrive together. We're steadfast in our commitment to
+              helping you achieve your financial goals.
             </div>
           </Col>
           <Col className="d-flex align-items-center justify-content-center">

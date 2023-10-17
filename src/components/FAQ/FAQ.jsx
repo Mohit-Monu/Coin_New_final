@@ -57,7 +57,7 @@ function FAQ() {
         </>
       ),
     },{
-      question: "Where Your Money Goes?",
+      question: "Where Your Investment Goes?",
       answer: "Your invested money goes into ethical mutual funds, managed by financial experts dedicated to growing your investments while upholding ethical standards."
     },{
       question: "Can I Change My Auto Payments Limit?",
@@ -75,7 +75,7 @@ function FAQ() {
 
   return (
     <div  className="container">
-      <h1 className="text-center m-2">FAQ</h1>
+      <h1 className="text-center m-2">Frequently Asked Questions</h1>
       <div className="accordion-header" style={{paddingBottom:"20px",marginTop:"20px"}} id="faqAccordion">
         {questions.map((q, index) => (
           <div className="card" key={index}>

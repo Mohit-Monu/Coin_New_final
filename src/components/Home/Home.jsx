@@ -81,11 +81,11 @@ function Home() {
     <div>
       <Container fluid className="mt-5 mb-5">
         <Row style={{ display: "flex", alignItems: "center" }}>
-          <Col md={8}>
+          <Col md={7}>
             <div>
               <h1 style={{ marginLeft: "30px", fontSize: "40px" }}>
-                Your Gateway to Affordable{" "}
-                <span style={{ color: "red" }}>Investing!</span>
+                Your Gateway to
+                <span style={{ color: "red" }}> Affordable </span>Investing!
               </h1>
             </div>
             <h4
@@ -108,7 +108,7 @@ function Home() {
               Get Started
             </Button>
           </Col>
-          <Col md={4}>
+          <Col md={5}>
             <img
               src={home1}
               style={{ width: "100%", padding: "20px", float: "right" }}
@@ -128,8 +128,8 @@ function Home() {
         <Container fluid>
           <Row className="justify-content-evenly">
             <Col className={classes.featuresub}>
-              <h5 className="text-center"> Daily Deposit</h5>
-              <p className="text-center ">
+              <h5 className="text-center mt-1"> Daily Deposit</h5>
+              <p className="text-center mt-1">
                 Save effortlessly with daily auto-deposits from your bank
                 account, helping you build wealth gradually.
               </p>
@@ -166,9 +166,10 @@ function Home() {
         <section id="testimonials" className="testimonials section-bg">
           <div className="container" data-aos="fade-up">
             <div className="section-header">
-              <h1>Validation</h1>
+              <h1>Idea Validation</h1>
               <p>
-                What Are They <span>Saying About Us</span>
+                What do our <span>prospective customers </span>have to say about
+                us?
               </p>
             </div>
             <Carousel style={{ paddingBottom: "50px" }}>
