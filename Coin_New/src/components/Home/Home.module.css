@@ -1,0 +1,15 @@
+.featuresub{
+  box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  background-color:#F1EFEF;
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.featurehead{
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 50px;
+}
